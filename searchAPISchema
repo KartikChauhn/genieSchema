@@ -30,3 +30,31 @@ res: {
         "2019-12-28"
     ]
 }
+
+3. GET /api/v1/oi/strike-prices
+query parameters:
+  instrument (string, required): name of the instrument
+  expiry (string, required): expiry date of the instrument
+  eg: /api/v1/oi/strike-prices?instrument=BANKNIFTY&expiry=2015-02-28
+
+res: {
+{
+    "status_code": 200,
+    "status": "Success",
+    "response_data": {
+        "strike_prices": [
+            28500,
+            29000,
+            29500,
+            ...
+            73500,
+            74000,
+            74500,
+            75000,
+            75500,
+            76000
+        ],
+        "atm_price": 10000
+    }
+}
+  
