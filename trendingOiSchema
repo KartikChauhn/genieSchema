@@ -9,82 +9,48 @@ eg: http://localhost:5002/api/v1/oi/get_trending_oi?instrument=BANKNIFTY&expiry=
 res: {
     "status_code": 200,
     "status": "Success",
-    "response_data": [
-        {
-            "exchange_logtime": "2025-06-05 09:15:00",
-            "oi_combined": {
-                "CE": 117630,
-                "PE": 38490
-            },
-            "strike_prices": [
-                56700,
-                56800
-            ],
-            "underlying_asset": {
-                "day_high": 55827,
-                "day_low": 55737.8,
-                "close_price": 55746.1,
-                "high_price": 55825.55,
-                "low_price": 55739.4,
-                "open_price": 55798.15
+    "response_data": {
+        "previous_day": [
+            {
+                "exchange_logtime": "2025-06-17 15:29:00",
+                "oi_combined": {
+                    "CE": 44265300,
+                    "PE": 45149025
+                },
+                "underlying_asset": null
             }
-        },
-        {
-            "exchange_logtime": "2025-06-05 09:16:00",
-            "oi_combined": {
-                "CE": 117630,
-                "PE": 46950
+        ],
+        "current_day": [
+            {
+                "exchange_logtime": "2025-06-18 09:15:00",
+                "oi_combined": {
+                    "CE": 43925925,
+                    "PE": 44574000
+                },
+                "underlying_asset": {
+                    "day_high": 24805.75,
+                    "day_low": 24776.9,
+                    "close_price": 24791.35,
+                    "high_price": 24800.65,
+                    "low_price": 24777.85,
+                    "open_price": 24789.35
+                }
             },
-            "strike_prices": [
-                56700,
-                56800
-            ],
-            "underlying_asset": {
-                "day_high": 55827,
-                "day_low": 55705.5,
-                "close_price": 55714.05,
-                "high_price": 55767.85,
-                "low_price": 55706.6,
-                "open_price": 55742
-            }
-        },
-        {
-            "exchange_logtime": "2025-06-05 09:17:00",
-            "oi_combined": {
-                "CE": 117630,
-                "PE": 46740
+            {
+                "exchange_logtime": "2025-06-18 09:16:00",
+                "oi_combined": {
+                    "CE": 43925925,
+                    "PE": 44574000
+                },
+                "underlying_asset": {
+                    "day_high": 24830.9,
+                    "day_low": 24776.9,
+                    "close_price": 24826.5,
+                    "high_price": 24829.45,
+                    "low_price": 24791,
+                    "open_price": 24791
+                }
             },
-            "strike_prices": [
-                56700,
-                56800
-            ],
-            "underlying_asset": {
-                "day_high": 55827,
-                "day_low": 55639.45,
-                "close_price": 55668.65,
-                "high_price": 55713.95,
-                "low_price": 55641.9,
-                "open_price": 55713.95
-            }
-        },
-        {
-            "exchange_logtime": "2025-06-05 09:18:00",
-            "oi_combined": {
-                "CE": 123120,
-                "PE": 46740
-            },
-            "strike_prices": [
-                56700,
-                56800
-            ],
-            "underlying_asset": {
-                "day_high": 55827,
-                "day_low": 55580.45,
-                "close_price": 55606,
-                "high_price": 55665.7,
-                "low_price": 55586.45,
-                "open_price": 55665.7
-            }
-        },
 ....]
+}
 }
