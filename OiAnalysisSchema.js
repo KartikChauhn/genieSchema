@@ -10,72 +10,71 @@ res: {
  "status_code": 200,
     "status": "Success",
     "response_data": {
-        "2025-06-05 09:15:00": {
-            "ce": {
-                "day_high": 997.7,
-                "day_low": 939.9,
-                "open_price": 950,
-                "high_price": 968.45,
-                "low_price": 946.05,
-                "close_price": 946.05,
-                "open_interest": 284130,
-                "volume": 360
-            },
-            "pe": {
-                "day_high": 772.8,
-                "day_low": 733.1,
-                "open_price": 756.45,
-                "high_price": 770.2,
-                "low_price": 756.45,
-                "close_price": 770.2,
-                "open_interest": 206340,
-                "volume": 150
+
+  {
+    "status_code": 200,
+    "status": "Success",
+    "response_data": {
+        "previous_day": {
+            "2025-06-17 15:29:00": {
+                "ce": {
+                    "day_high": 384.65,
+                    "day_low": 273.5,
+                    "open_price": 282.85,
+                    "high_price": 285.75,
+                    "low_price": 282.85,
+                    "close_price": 285.75,
+                    "open_interest": 188625,
+                    "volume": 3450
+                }
             }
         },
-        "2025-06-05 09:16:00": {
-            "ce": {
-                "day_high": 997.7,
-                "day_low": 938,
-                "open_price": 941.85,
-                "high_price": 962.45,
-                "low_price": 941.85,
-                "close_price": 946.4,
-                "open_interest": 284130,
-                "volume": 1050
+        "current_day": {
+            "2025-06-18 09:15:00": {
+                "ce": {
+                    "day_high": 269.05,
+                    "day_low": 256,
+                    "open_price": 285.75,
+                    "high_price": 285.75,
+                    "low_price": 256,
+                    "close_price": 259.8,
+                    "open_interest": 188925,
+                    "volume": 3750
+                },
+                "pe": {
+                    "day_high": 188.05,
+                    "day_low": 172.75,
+                    "open_price": 173,
+                    "high_price": 186.85,
+                    "low_price": 173,
+                    "close_price": 176,
+                    "open_interest": 428100,
+                    "volume": 3075
+                }
             },
-            "pe": {
-                "day_high": 779,
-                "day_low": 733.1,
-                "open_price": 767.55,
-                "high_price": 773.05,
-                "low_price": 748.5,
-                "close_price": 773.05,
-                "open_interest": 206340,
-                "volume": 1290
-            }
-        },
-        "2025-06-05 09:17:00": {
-            "ce": {
-                "day_high": 997.7,
-                "day_low": 891.9,
-                "open_price": 940.25,
-                "high_price": 940.25,
-                "low_price": 900.5,
-                "close_price": 900.5,
-                "open_interest": 284130,
-                "volume": 1440
+            "2025-06-18 09:16:00": {
+                "ce": {
+                    "day_high": 272.95,
+                    "day_low": 256,
+                    "open_price": 258.4,
+                    "high_price": 272.65,
+                    "low_price": 256.35,
+                    "close_price": 266.5,
+                    "open_interest": 188925,
+                    "volume": 5175
+                },
+                "pe": {
+                    "day_high": 188.05,
+                    "day_low": 167.7,
+                    "open_price": 175.7,
+                    "high_price": 176.6,
+                    "low_price": 168,
+                    "close_price": 170.2,
+                    "open_interest": 428100,
+                    "volume": 3600
+                }
             },
-            "pe": {
-                "day_high": 811.8,
-                "day_low": 733.1,
-                "open_price": 777.85,
-                "high_price": 803.3,
-                "low_price": 777.85,
-                "close_price": 802.8,
-                "open_interest": 206340,
-                "volume": 1650
-            }
-        },
-   ....
+         ....
+    }
  }
 }
