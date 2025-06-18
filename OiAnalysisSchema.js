@@ -10,11 +10,6 @@ res: {
  "status_code": 200,
     "status": "Success",
     "response_data": {
-
-  {
-    "status_code": 200,
-    "status": "Success",
-    "response_data": {
         "previous_day": {
             "2025-06-17 15:29:00": {
                 "ce": {
