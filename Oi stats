@@ -1,0 +1,18 @@
+curl 'https://oxide.sensibull.com/v1/compute/2/oi_graphs/oi_chart' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8' \
+  -H 'content-type: application/json' \
+  -b 'rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX19tdhXQY%2BDvmQfU6aBNHvZ%2FShKV0%2B5RWmIrhJ5Bl5yMh6Sc1oKCZQxy; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BadxXgR1Ly2jkCqFKc7yHdUj06u%2FtKOXS35%2B6baPTrsqys16oUl4eW; _ga=GA1.1.518752243.1747763993; sb_rudder_utm={}; _cfuvid=DGgXw.Ntv4HKkED1ZI0ATCQT2c8hQypXUE0z30yrWT4-1750951134098-0.0.1.1-604800000; _clck=fpnew2%7C2%7Cfx3%7C0%7C1966; access_token=free_user; _clsk=10u2cfb%7C1750951866465%7C2%7C1%7Cl.clarity.ms%2Fcollect; _ga_NC7XJTRTDX=GS2.1.s1750951134$o9$g1$t1750951867$j60$l0$h0; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX190KlKwMzUF502SoB7M1foIZDMNiXm73vhYxs2B1rUrjmI0Ee9og0nglJ%2BBSc%2F0zAYr0gcaXJKfwA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2FWLyha9UloieIffOR6azTWloP818qb7aU%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX1%2Fzak0BQmuYOvEVZB%2BogUr0H9TuhcUtC1rcIWft2xpSlzENHZvb%2Fi7D; rl_session=RudderEncrypt%3AU2FsdGVkX18yEG7PGt35RDS7xxNTXRqoi%2Byf25My2HQGhodps4j4Gg6yL1EJsab9s5oyCsYqdP%2FeajC%2BXkGeuHFY78bMYZm5iv6ChS3fUrXF5QCJABg%2FfkWuZxXGNV3IlsN3iAp%2BVB3j34QluUTrFA%3D%3D' \
+  -H 'frt-ref: 1eh6fo29bmo' \
+  -H 'origin: https://web.sensibull.com' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://web.sensibull.com/' \
+  -H 'sec-ch-ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \
+  -H 'x-device-id: 42d9e8d0-4499-4de7-8b32-509d1013ab7a' \
+  --data-raw '{"underlying":"RELIANCE","date":"2025-06-26","from_time":"2025-06-26T04:12:00Z","to_time":"2025-06-26T08:08:00Z","auto_update":"disabled","expiries":{"2025-07-31":{"is_weekly":false,"is_enabled":false},"2025-06-26":{"is_weekly":false,"is_enabled":true}},"atm_strike_selection":"twenty","input_min_strike":null,"input_max_strike":null,"show_prev_oi":true}'
