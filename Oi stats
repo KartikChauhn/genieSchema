@@ -16,7 +16,7 @@ PAYLOAD AND RESPONSE ---------------------------------
                 }
             },
             "atm_strike_selection": "fifteen",
-            "show_prev_oi": true
+            "show_oi": false
         }, // this is our payload as well 
         "prev_ltp": 1467.3, // close price of prev candle
         "date_ltp": 1495.3, // to close price
@@ -213,6 +213,20 @@ PAYLOAD AND RESPONSE ---------------------------------
                 "prev_call_oi": 0,
                 "prev_put_oi": 0
             }
-        }
+        } // by default oi change data will be here
     }
 }
+
+
+/// for oi change when show_oi is false 
+{"per_strike_data" :[ "strike" : {
+    "call_oi_change": -31500,
+    "put_oi_change": -200000
+}]}
+
+{"total_call_oi_change"
+: 
+-7648000,
+"total_put_oi_change"
+: 
+-3407000}
