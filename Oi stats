@@ -1,18 +1,218 @@
-curl 'https://oxide.sensibull.com/v1/compute/2/oi_graphs/oi_chart' \
-  -H 'accept: application/json, text/plain, */*' \
-  -H 'accept-language: en-GB,en-US;q=0.9,en;q=0.8' \
-  -H 'content-type: application/json' \
-  -b 'rl_page_init_referrer=RudderEncrypt%3AU2FsdGVkX19tdhXQY%2BDvmQfU6aBNHvZ%2FShKV0%2B5RWmIrhJ5Bl5yMh6Sc1oKCZQxy; rl_page_init_referring_domain=RudderEncrypt%3AU2FsdGVkX1%2BadxXgR1Ly2jkCqFKc7yHdUj06u%2FtKOXS35%2B6baPTrsqys16oUl4eW; _ga=GA1.1.518752243.1747763993; sb_rudder_utm={}; _cfuvid=DGgXw.Ntv4HKkED1ZI0ATCQT2c8hQypXUE0z30yrWT4-1750951134098-0.0.1.1-604800000; _clck=fpnew2%7C2%7Cfx3%7C0%7C1966; access_token=free_user; _clsk=10u2cfb%7C1750951866465%7C2%7C1%7Cl.clarity.ms%2Fcollect; _ga_NC7XJTRTDX=GS2.1.s1750951134$o9$g1$t1750951867$j60$l0$h0; rl_anonymous_id=RudderEncrypt%3AU2FsdGVkX190KlKwMzUF502SoB7M1foIZDMNiXm73vhYxs2B1rUrjmI0Ee9og0nglJ%2BBSc%2F0zAYr0gcaXJKfwA%3D%3D; rl_user_id=RudderEncrypt%3AU2FsdGVkX1%2FWLyha9UloieIffOR6azTWloP818qb7aU%3D; rl_trait=RudderEncrypt%3AU2FsdGVkX1%2Fzak0BQmuYOvEVZB%2BogUr0H9TuhcUtC1rcIWft2xpSlzENHZvb%2Fi7D; rl_session=RudderEncrypt%3AU2FsdGVkX18yEG7PGt35RDS7xxNTXRqoi%2Byf25My2HQGhodps4j4Gg6yL1EJsab9s5oyCsYqdP%2FeajC%2BXkGeuHFY78bMYZm5iv6ChS3fUrXF5QCJABg%2FfkWuZxXGNV3IlsN3iAp%2BVB3j34QluUTrFA%3D%3D' \
-  -H 'frt-ref: 1eh6fo29bmo' \
-  -H 'origin: https://web.sensibull.com' \
-  -H 'priority: u=1, i' \
-  -H 'referer: https://web.sensibull.com/' \
-  -H 'sec-ch-ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"' \
-  -H 'sec-ch-ua-mobile: ?0' \
-  -H 'sec-ch-ua-platform: "macOS"' \
-  -H 'sec-fetch-dest: empty' \
-  -H 'sec-fetch-mode: cors' \
-  -H 'sec-fetch-site: same-site' \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \
-  -H 'x-device-id: 42d9e8d0-4499-4de7-8b32-509d1013ab7a' \
-  --data-raw '{"underlying":"RELIANCE","date":"2025-06-26","from_time":"2025-06-26T04:12:00Z","to_time":"2025-06-26T08:08:00Z","auto_update":"disabled","expiries":{"2025-07-31":{"is_weekly":false,"is_enabled":false},"2025-06-26":{"is_weekly":false,"is_enabled":true}},"atm_strike_selection":"twenty","input_min_strike":null,"input_max_strike":null,"show_prev_oi":true}'
+PAYLOAD AND RESPONSE ---------------------------------
+
+{
+    "success": true,
+    "payload": {
+        "input": {
+            "underlying": "RELIANCE",
+            "from_time": "2025-06-26T03:45:00Z",
+            "to_time": "2025-06-26T14:00:00Z",
+            "expiries": {
+                "2025-06-26": {
+                    "is_enabled": true
+                },
+                "2025-07-31": {
+                    "is_enabled": true
+                }
+            },
+            "atm_strike_selection": "fifteen",
+            "show_prev_oi": true
+        }, // this is our payload as well 
+        "prev_ltp": 1467.3, // close price of prev candle
+        "date_ltp": 1495.3, // to close price
+        "date_ltp_change_percentage": null, /// to be calculated on fe
+        "current_ltp": 1495.3, // current close price or current ltp from redis
+        "atm_strike": 1500,
+        "total_call_oi": 35735000,
+        "total_put_oi": 24250000,
+        "pcr": 0.68, // total put oi upon total call oi from selected strikes.
+        "per_strike_data": {
+            "1350": {
+                "call_oi": 268000,
+                "put_oi": 1234000,
+                "prev_call_oi": 253500,
+                "prev_put_oi": 1182000
+            },
+            "1360": {
+                "call_oi": 221500,
+                "put_oi": 410500,
+                "prev_call_oi": 216500,
+                "prev_put_oi": 493000
+            },
+            "1370": {
+                "call_oi": 66500,
+                "put_oi": 266500,
+                "prev_call_oi": 67500,
+                "prev_put_oi": 264500
+            },
+            "1380": {
+                "call_oi": 170000,
+                "put_oi": 831500,
+                "prev_call_oi": 159500,
+                "prev_put_oi": 794000
+            },
+            "1390": {
+                "call_oi": 154500,
+                "put_oi": 312000,
+                "prev_call_oi": 152000,
+                "prev_put_oi": 263000
+            },
+            "1400": {
+                "call_oi": 1328500,
+                "put_oi": 2560000,
+                "prev_call_oi": 1530500,
+                "prev_put_oi": 2743500
+            },
+            "1410": {
+                "call_oi": 831500,
+                "put_oi": 1247000,
+                "prev_call_oi": 817500,
+                "prev_put_oi": 1387500
+            },
+            "1420": {
+                "call_oi": 1967000,
+                "put_oi": 2144000,
+                "prev_call_oi": 1798000,
+                "prev_put_oi": 2336000
+            },
+            "1430": {
+                "call_oi": 783000,
+                "put_oi": 1293000,
+                "prev_call_oi": 966500,
+                "prev_put_oi": 1707000
+            },
+            "1440": {
+                "call_oi": 1419500,
+                "put_oi": 1268000,
+                "prev_call_oi": 1764000,
+                "prev_put_oi": 1579000
+            },
+            "1450": {
+                "call_oi": 2632500,
+                "put_oi": 1917500,
+                "prev_call_oi": 2999000,
+                "prev_put_oi": 2528000
+            },
+            "1460": {
+                "call_oi": 1835000,
+                "put_oi": 2685000,
+                "prev_call_oi": 2416000,
+                "prev_put_oi": 3139000
+            },
+            "1470": {
+                "call_oi": 1843000,
+                "put_oi": 1554000,
+                "prev_call_oi": 3029000,
+                "prev_put_oi": 1154000
+            },
+            "1480": {
+                "call_oi": 1970000,
+                "put_oi": 1143000,
+                "prev_call_oi": 4203500,
+                "prev_put_oi": 708000
+            },
+            "1490": {
+                "call_oi": 657500,
+                "put_oi": 515500,
+                "prev_call_oi": 1397000,
+                "prev_put_oi": 241000
+            },
+            "1500": {
+                "call_oi": 6235500,
+                "put_oi": 1898500,
+                "prev_call_oi": 6889500,
+                "prev_put_oi": 1499500
+            },
+            "1510": {
+                "call_oi": 773500,
+                "put_oi": 175000,
+                "prev_call_oi": 774500,
+                "prev_put_oi": 117000
+            },
+            "1520": {
+                "call_oi": 1548500,
+                "put_oi": 753000,
+                "prev_call_oi": 1274000,
+                "prev_put_oi": 617500
+            },
+            "1530": {
+                "call_oi": 773000,
+                "put_oi": 116500,
+                "prev_call_oi": 629000,
+                "prev_put_oi": 79500
+            },
+            "1540": {
+                "call_oi": 960000,
+                "put_oi": 44000,
+                "prev_call_oi": 978500,
+                "prev_put_oi": 18500
+            },
+            "1550": {
+                "call_oi": 1680000,
+                "put_oi": 597500,
+                "prev_call_oi": 1422500,
+                "prev_put_oi": 378500
+            },
+            "1560": {
+                "call_oi": 1333000,
+                "put_oi": 32000,
+                "prev_call_oi": 1159000,
+                "prev_put_oi": 6500
+            },
+            "1570": {
+                "call_oi": 458000,
+                "put_oi": 500,
+                "prev_call_oi": 448000,
+                "prev_put_oi": 1000
+            },
+            "1580": {
+                "call_oi": 813500,
+                "put_oi": 38000,
+                "prev_call_oi": 685000,
+                "prev_put_oi": 7000
+            },
+            "1590": {
+                "call_oi": 165000,
+                "put_oi": 0,
+                "prev_call_oi": 10500,
+                "prev_put_oi": 0
+            },
+            "1600": {
+                "call_oi": 3610000,
+                "put_oi": 633500,
+                "prev_call_oi": 2652500,
+                "prev_put_oi": 502000
+            },
+            "1610": {
+                "call_oi": 0,
+                "put_oi": 0,
+                "prev_call_oi": 0,
+                "prev_put_oi": 0
+            },
+            "1620": {
+                "call_oi": 668500,
+                "put_oi": 263000,
+                "prev_call_oi": 447500,
+                "prev_put_oi": 279000
+            },
+            "1630": {
+                "call_oi": 0,
+                "put_oi": 0,
+                "prev_call_oi": 0,
+                "prev_put_oi": 0
+            },
+            "1640": {
+                "call_oi": 568500,
+                "put_oi": 317000,
+                "prev_call_oi": 352000,
+                "prev_put_oi": 305000
+            },
+            "1650": {
+                "call_oi": 0,
+                "put_oi": 0,
+                "prev_call_oi": 0,
+                "prev_put_oi": 0
+            }
+        }
+    }
+}
