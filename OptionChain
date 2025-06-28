@@ -29,3 +29,110 @@
     },
     "futurePrice": ""
 }
+
+Column View : "LTP View"
+"56100" : {
+        PCR,
+        "ce" : {
+                LTP
+                LTP Change
+                LTP Change %
+                OI
+                OI Change
+                OI Change %
+                OI Interpretation
+                IV
+                IV Change
+                IV Change %
+                VWAP
+        },
+        "pe": {
+                LTP
+                LTP Change
+                LTP Change %
+                OI
+                OI Change
+                OI Change %
+                OI Interpretation
+                IV
+                IV Change
+                IV Change %
+                VWAP
+        }
+
+Column View : "Greeks View"
+"56100" : {
+        PCR,
+        "ce" : {
+                LTP
+                OI
+                OI Interpretation
+                IV
+                Delta
+                Theta
+                Vega
+                Gamma
+                Rho
+                VWAP
+        },
+        "pe": {
+                LTP
+                OI
+                OI Interpretation
+                IV
+                Delta
+                Theta
+                Vega
+                Gamma
+                Rho
+                VWAP
+        }
+
+
+Column View : "All Column View"
+"56100" : {
+        PCR,
+        Combine Premium
+        Straddle Price
+        "ce" : {
+                LTP
+                LTP Change
+                LTP Change %
+                OI
+                OI Change
+                OI Change %
+                OI Interpretation
+                Volume
+                IV
+                IV Change
+                IV Change %
+                Delta
+                Theta
+                Vega
+                Gamma
+                Rho
+                VWAP
+                Intrinisic Value
+                Premium
+        },
+        "pe": {
+                LTP
+                LTP Change
+                LTP Change %
+                OI
+                OI Change
+                OI Change %
+                OI Interpretation
+                Volume
+                IV
+                IV Change
+                IV Change %
+                Delta
+                Theta
+                Vega
+                Gamma
+                Rho
+                VWAP
+                Intrinisic Value
+                Premium
+        }
