@@ -1,18 +1,27 @@
 GET /api/v1/oi/get_oi_stats
 query parameters:
- * @param {string} instrument - REQUIRED. Options: NIFTY, BANKNIFTY, NIFTYNXT50, FINNIFTY, MIDCPNIFTY
- * @param {string} [from_time] - OPTIONAL. Start time in ISO format (e.g., "2025-07-03T09:15:00.000Z")
- * @param {string} [to_time] - OPTIONAL. End time in ISO format (e.g., "2025-07-03T15:30:00.000Z")
+@param {string} instrument - REQUIRED. Options: NIFTY, BANKNIFTY, NIFTYNXT50, FINNIFTY, MIDCPNIFTY
+ * @param {string} [from_time] - OPTIONAL. Start time format: "YYYY-MM-DD HH:mm:ss" (e.g., "2025-07-03 09:15:00")
+ * @param {string} [to_time] - OPTIONAL. End time format: "YYYY-MM-DD HH:mm:ss" (e.g., "2025-07-03 15:30:00")
  * @param {object} [expiries] - OPTIONAL. JSON object: {"2025-07-10": {"is_enabled": true}}
- * @param {number} [atm_strike_selection] - OPTIONAL. Number of strikes around ATM (default: 10)
+ * @param {number} [atm_strike_selection] - OPTIONAL. Number of strikes around ATM (1-50, default: 10)
  * @param {boolean} [show_oi] - OPTIONAL. Show detailed OI data (default: false)
- * 
- * @example GET /api/v1/oi/stats?instrument=BANKNIFTY&atm_strike_selection=15&show_oi=true
- */
 
-eg: http://localhost:5002/api/v1/oi/get_oi_stats?instrument=BANKNIFTY (Landing/Homepage)
-eg: http://localhost:5002/api/v1/oi/stats?instrument=BANKNIFTY&from_time=2025-07-03T09:15:00.000Z&to_time=2025-07-03T15:30:00.000Z&expiries=%7B%222025-07-10%22:%7B%22is_enabled%22:true%7D,%222025-07-17%22:%7B%22is_enabled%22:false%7D%7D&atm_strike_selection=15&show_oi=true
-eg: http://localhost:5002/api/v1/oi/stats?instrument=BANKNIFTY&atm_strike_selection=15&show_oi=true
+eg:
+default:
+/api/v1/oi/stats?instrument=BANKNIFTY
+
+# with custom strikes:
+/api/v1/oi/stats?instrument=BANKNIFTY&atm_strike_selection=15
+
+# with time range
+/api/v1/oi/stats?instrument=BANKNIFTY&from_time=2025-07-03 09:15:00&to_time=2025-07-03 15:30:00
+
+# full parameters:
+/api/v1/oi/stats?instrument=BANKNIFTY&from_time=2025-07-03 09:15:00&to_time=2025-07-03 15:30:00&atm_strike_selection=15&show_oi=true
+
+# custom expiries
+/api/v1/oi/stats?instrument=BANKNIFTY&expiries={"2025-07-10":{"is_enabled":true},"2025-07-17":{"is_enabled":false}}
 
 res: {
     "status_code": 200,
