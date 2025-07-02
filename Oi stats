@@ -1,3 +1,163 @@
+
+
+"response_data": {
+        "input": {
+            "instrument": "BANKNIFTY",
+            "from_time": "2025-06-23 09:15:00",
+            "to_time": "2025-06-23 15:30:00",
+            "expiries": {
+                "2025-06-26": {
+                    "is_enabled": true
+                },
+                "2025-07-31": {
+                    "is_enabled": false
+                }
+            },
+            "atm_strike_selection": 10,
+            "show_oi": false
+        },
+        "per_strike_data": {
+            "57900": {
+                "call_oi": 174900,
+                "put_oi": 2310,
+                "prev_call_oi": 130230,
+                "prev_put_oi": 2340
+            },
+            "58000": {
+                "call_oi": 1503540,
+                "put_oi": 81270,
+                "prev_call_oi": 1426320,
+                "prev_put_oi": 90930
+            },
+            "58100": {
+                "call_oi": 129630,
+                "put_oi": 0,
+                "prev_call_oi": 141960,
+                "prev_put_oi": 0
+            },
+            "58200": {
+                "call_oi": 128460,
+                "put_oi": 0,
+                "prev_call_oi": 0,
+                "prev_put_oi": 0
+            },
+            "58300": {
+                "call_oi": 111870,
+                "put_oi": 0,
+                "prev_call_oi": 134790,
+                "prev_put_oi": 510
+            },
+            "58400": {
+                "call_oi": 96360,
+                "put_oi": 0,
+                "prev_call_oi": 93120,
+                "prev_put_oi": 0
+            },
+            "58500": {
+                "call_oi": 898905,
+                "put_oi": 9810,
+                "prev_call_oi": 991995,
+                "prev_put_oi": 10680
+            },
+            "58600": {
+                "call_oi": 99930,
+                "put_oi": 0,
+                "prev_call_oi": 0,
+                "prev_put_oi": 0
+            },
+            "58700": {
+                "call_oi": 70560,
+                "put_oi": 0,
+                "prev_call_oi": 87060,
+                "prev_put_oi": 0
+            },
+            "58800": {
+                "call_oi": 104280,
+                "put_oi": 0,
+                "prev_call_oi": 90090,
+                "prev_put_oi": 0
+            },
+            "58900": {
+                "call_oi": 75420,
+                "put_oi": 0,
+                "prev_call_oi": 75210,
+                "prev_put_oi": 0
+            },
+            "59000": {
+                "call_oi": 1399830,
+                "put_oi": 15630,
+                "prev_call_oi": 1349880,
+                "prev_put_oi": 0
+            },
+            "59100": {
+                "call_oi": 67770,
+                "put_oi": 0,
+                "prev_call_oi": 55530,
+                "prev_put_oi": 330
+            },
+            "59200": {
+                "call_oi": 72180,
+                "put_oi": 0,
+                "prev_call_oi": 64020,
+                "prev_put_oi": 450
+            },
+            "59300": {
+                "call_oi": 65130,
+                "put_oi": 0,
+                "prev_call_oi": 50130,
+                "prev_put_oi": 0
+            },
+            "59400": {
+                "call_oi": 63210,
+                "put_oi": 0,
+                "prev_call_oi": 56010,
+                "prev_put_oi": 0
+            },
+            "59500": {
+                "call_oi": 670230,
+                "put_oi": 0,
+                "prev_call_oi": 630270,
+                "prev_put_oi": 0
+            },
+            "59600": {
+                "call_oi": 73080,
+                "put_oi": 0,
+                "prev_call_oi": 74670,
+                "prev_put_oi": 0
+            },
+            "59700": {
+                "call_oi": 0,
+                "put_oi": 0,
+                "prev_call_oi": 191910,
+                "prev_put_oi": 0
+            },
+            "59800": {
+                "call_oi": 58620,
+                "put_oi": 0,
+                "prev_call_oi": 62430,
+                "prev_put_oi": 0
+            },
+            "59900": {
+                "call_oi": 46980,
+                "put_oi": 0,
+                "prev_call_oi": 48630,
+                "prev_put_oi": 0
+            }
+        },
+        "total_call_oi": 5910885,
+        "total_put_oi": 109020,
+        "pcr": 0.02,
+        "prev_ltp": 56215.35,
+        "date_ltp": 56032.9,
+        "date_ltp_change_percentage": -0.32,
+        "atm_price": 58900,
+        "LTP": 58889.55
+    }
+}
+
+====================
+Planned before:
+
 PAYLOAD AND RESPONSE ---------------------------------
 
 {
