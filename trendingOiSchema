@@ -34,7 +34,10 @@ res: {
                     "high_price": 24800.65,
                     "low_price": 24777.85,
                     "open_price": 24789.35
-                }
+                },
+                "fut_price" : <>,
+                "vwap": <>,
+                "vwap_signal": <>
             },
             {
                 "exchange_logtime": "2025-06-18 09:16:00",
