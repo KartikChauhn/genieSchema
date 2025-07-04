@@ -1,0 +1,60 @@
+"status_code": 200,
+    "status": "Success",
+    "response_data": {
+        "input": {
+            "exact_minute": "2025-06-23 15:30:00",
+            "volume_range_to": 34555663,
+            "volume_range_from": 34555663,
+            "OI Interpretation": "All"/"Long Buildup"/"Long Unwinding"/"Short Buildup"/"Short Covering",
+            "vwap_signal": "All"/"Bullish"/"Bearish",
+            "market_sentiment": "All/"Bullish"/"Bearish"/"Mild Bearish"/"Mild Bullish",
+            "future_OI_Change_Percentage": 33%, 
+            }
+data:{
+  "BANKNIFTY": {
+            "volume": 677667, //volume of exact minute
+            "future_price": 3344, //nearest expiry only
+            "future_price_change": 343, //price change from previous day
+            "vwap": 3343,
+            "vwap_signal": "Bullish"/"Bearish",
+            "future_OI": 34333,//nearest expiry only
+            "future_OI_Change": 334333, //OI change from previous day
+            "future_OI_Change_Percentage": 33%, //OI change percentage from previous day
+            "OI_Interpretation": "Long Buildup"/"Long Unwinding"/"Short Buildup"/"Short Covering",
+            "PCR": 1.2,
+            "market_sentiment": "Bullish"/"Bearish"/"Mild Bearish"/"Mild Bullish",  
+            }
+
+
+
+
+"status_code": 200,
+    "status": "Success",
+    "response_data": {
+        "input": {
+            "from_time": "2025-06-23 09:15:00",
+            "to_time": "2025-06-23 15:30:00",
+            "no_of_time_minute_volume_spike": "Any"/Value(1-375),
+            "volume_range_to": 34555663,
+            "volume_range_from": 34555663,
+            "OI Interpretation": "All"/"Long Buildup"/"Long Unwinding"/"Short Buildup"/"Short Covering",
+            "vwap_signal": "All"/"Bullish"/"Bearish",
+            "market_sentiment": "All/"Bullish"/"Bearish"/"Mild Bearish"/"Mild Bullish",
+            "future_OI_Change_Percentage": 33%, 
+            }
+data:{
+  "BANKNIFTY": {
+            "highest_volume_during_interval": 677667,
+            "highest-volume_minute": "2025-06-23 09:15:00",
+            "no_of_time_minute_volume_spike": 10,
+            "future-price": 3344,
+            "future-price-change": 343,
+            "vwap": 3343,
+            "vwap_signal": "Bullish"/"Bearish",
+            "future_OI": 34333,//nearest expiry only
+            "future_OI_Change": 334333, //OI change from -> to interval
+            "future_OI_Change_Percentage": 33%, //OI change percentage from from -> to interval
+            "OI_Interpretation": "Long Buildup"/"Long Unwinding"/"Short Buildup"/"Short Covering",
+            "PCR": 1.2,
+            "market_sentiment": "Bullish"/"Bearish"/"Mild Bearish"/"Mild Bullish", 
+        }
