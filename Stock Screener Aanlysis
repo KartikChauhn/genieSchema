@@ -5,9 +5,9 @@
             "from_time": "2025-06-23 09:15:00",
             "to_time": "2025-06-23 15:30:00",
             "min_value": 474747,
-            "max_value": 33444,
+            "max_value": 33444, //default as infinite
             "min_average_1min_volume": 34555663,
-            "max_average_1min_volume": 34555663,
+            "max_average_1min_volume": 34555663, //default as infinite
             "vwap_signal": "All"/"Bullish"/"Bearish",
             "market_sentiment": "All/"Bullish"/"Bearish"/"Mild Bearish"/"Mild Bullish",
             "min_share_price_change": 33%,  // default as 0
@@ -18,7 +18,7 @@ data:{
   "TCS": {
             "value": 677667, //value of exact minute (average price from ohlc*total volume for the min)
             "average_1min_volume_5_days": 566565, //average 1 min volume from last 5 days
-            "flag": volume>10*average_1_min_volume_5_days, 
+            "flag": volume_1_min>10*average_1_min_volume_5_days, 
             "stock_price": 3344, //nearest expiry only
             "stock_price_change": 343, //price change from previous day
             "vwap": 3343,
