@@ -16,7 +16,8 @@
             }
 data:{
   "TCS": {
-            "value": 677667, //value of exact minute (average price from ohlc*total volume for the min)
+            "value_latest_minute": 677667, //value of latest minute (average price from ohlc*total volume for the min)
+            "volume_latest_min": 677667, //volume of latest minute
             "average_1min_volume_5_days": 566565, //average 1 min volume from last 5 days
             "flag": volume_1_min>10*average_1_min_volume_5_days, 
             "stock_price": 3344, //nearest expiry only
