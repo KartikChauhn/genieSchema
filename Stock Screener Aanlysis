@@ -2,23 +2,22 @@
     "status": "Success",
     "response_data": {
         "input": {
-            "from_time": "2025-06-23 09:15:00",
-            "to_time": "2025-06-23 15:30:00",
             "min_value": 474747,
             "max_value": 33444, //default as infinite
-            "min_average_1min_volume": 34555663,
-            "max_average_1min_volume": 34555663, //default as infinite
+            "min_average_1min_volume": 34555663,  //default as zero
+            "max_average_1min_volume": 34555663,  //default as infinite
             "vwap_signal": "All"/"Bullish"/"Bearish",
             "min_share_price_change": 33%,  // default as 0
             "max_share_price_change": 33%, //default as 1000
-            "volume_flag": 10,
+            "volume_flag": 10, //Value ranging from 1 to 100, default as 10
             }
 data:{
   "TCS": {
             "value_latest_minute": 677667, //value of latest minute (average price from ohlc*total volume for the min)
             "volume_latest_min": 677667, //volume of latest minute
             "average_1min_volume_5_days": 566565, //average 1 min volume from last 5 days
-            "flag": volume_1_min>10*average_1_min_volume_5_days, 
+            "flag": volume_1_min>10*average_1_min_volume_past_3_days,
+            "flagged_time_today": 11:59 PM 
             "stock_price": 3344, //nearest expiry only
             "stock_price_change": 343, //price change from previous day
             "vwap": 3343,
@@ -29,8 +28,6 @@ data:{
             "no_of_time_minute_volume_value_spike_t-1": "Any"/Value(1-375),
             "no_of_time_minute_volume_value_spike_t-2": "Any"/Value(1-375),
             "no_of_time_minute_volume_value_spike_t-3": "Any"/Value(1-375),
-            "no_of_time_minute_volume_value_spike_t-4": "Any"/Value(1-375),
-            "no_of_time_minute_volume_value_spike_t-5": "Any"/Value(1-375),
         }
 
 
