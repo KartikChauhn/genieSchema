@@ -9,7 +9,6 @@
             "min_average_1min_volume": 34555663,
             "max_average_1min_volume": 34555663, //default as infinite
             "vwap_signal": "All"/"Bullish"/"Bearish",
-            "market_sentiment": "All/"Bullish"/"Bearish"/"Mild Bearish"/"Mild Bullish",
             "min_share_price_change": 33%,  // default as 0
             "max_share_price_change": 33%, //default as 1000
             "volume_flag": 10,
@@ -24,7 +23,6 @@ data:{
             "stock_price_change": 343, //price change from previous day
             "vwap": 3343,
             "vwap_signal": "Bullish"/"Bearish",
-            "market_sentiment": "Bullish"/"Bearish"/"Mild Bearish"/"Mild Bullish",
             "highest_volume_during_interval": 677667,
             "last_highest-volume_minute": "2025-06-23 09:15:00",
             "no_of_time_minute_volume_value_spike_today": "Any"/Value(1-375),
