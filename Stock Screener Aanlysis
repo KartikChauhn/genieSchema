@@ -1,11 +1,10 @@
-Show all the stocks of the day whose any 1 min bar volume exceeded xx times of the average 1min volume from the last yy days.
+Show all the stocks of the day whose any 1 min bar volume exceeded xx times of the average 1min volume from the last yy days, and the value (average price of that bar * volume of that bar) of that bar should exceed by zz
 
 "status_code": 200,
     "status": "Success",
     "response_data": {
         "input": {
-            "min_value": 474747,
-            "max_value": 33444, //default as infinite
+            "exceed_value_by": zz, //default as 4 crore
             "min_average_1min_volume": 34555663,  //default as zero
             "max_average_1min_volume": 34555663,  //default as infinite
             "no_of_days_average_volume"= yy  //ranging from 1 to 10
